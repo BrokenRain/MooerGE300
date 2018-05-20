@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window size="800,600" mininfo="600,400" caption="0,0,0,32" sizebox="4,4,4,4">
+<!-- 窗口的初始尺寸(宽800，高600)、窗口的最小尺寸(宽600，高400)、标题栏拖拽区域(高32)、可拖拽边框大小(这里添加sizebox后就可以拖拽边框调整大小了) -->    
+    <VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#FFAAAAA0"> <!-- 整个窗口的背景色 -->
+    	<!-- 标题栏区 -->
+    	<!-- 标题栏背景色 bkcolor、bkcolor2、bkcolor3分别是渐变色的三个值-->
+    	<HorizontalLayout height="32" bkcolor="#FFR6E6DC" bkcolor2="#FFAAAAA0">
+    		<VerticalLayout /> <!-- 占空位，占据左边所有的空位-->
+    		<VerticalLayout width="77"> <!-- 右边三个控件所占的宽度-->
+    			<Butoon name="btn_min" tooltip="最小化" float="true" pos="0,5,22,24"
+    				width="23" normalimage=" file='image/min.png' "/>
+    			<Button name="btn_max" tooltip="最大化" float="true" pos="23,5,44,24"
+    				width="23" normalimage=" file='image/min.png' "/>
+					<Button name="btn_close" tooltip="关闭" float="true" pos="46,5,74,24"
+    				width="28" normalimage=" file='image/close.png' "/>
+    		</VerticalLayout>		   		
+    	</HorizontalLayout>
+    	
+    	<!-- 客户区 -->
+    	<HorizontalLayout bkcolor="#FF00FF00"> <!-- 整个窗口的背景 -->
+        <Button name="btn_test" text="Hello World"/> <!-- 按钮的属性，如名称、文本 -->
+    </HorizontalLayout>
+    </VerticalLayout> 
+</Window>
